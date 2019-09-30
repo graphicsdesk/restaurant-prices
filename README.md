@@ -28,3 +28,5 @@ cd restaurant-prices
 5. We will be using Jupyter Notebooks to do this analysis. Please watch [this short introduction on Jupyter](https://www.youtube.com/watch?v=jZ952vChhuI).
 
 6. Run `jupyter notebook` to start the notebook. Go into the `notebooks` directory, then open the `fetcher.ipynb` notebook.
+
+7. You're ready to do data reporting!
