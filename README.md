@@ -21,10 +21,10 @@ git clone git@github.com:spec-journalism/restaurant-prices.git
 cd restaurant-prices
 ```
 
-3. Now run `pipenv install` to install all the packages listed in the `Pipfile`. (The Pipfile is a file in this repository that lists all the packages we install so `pipenv` knows which ones to get.)
+3. Now run `pipenv install` to install all the packages listed in the `Pipfile`. (The Pipfile is a file in this repository that lists all the packages we need so `pipenv` knows which ones to get.)
 
 4. Run `pipenv shell` to be able to access the newly installed packages.
 
-5. We will be using Jupyter Notebooks to do the analysis. Please watch [this short introduction on Jupyter](https://www.youtube.com/watch?v=jZ952vChhuI).
+5. We will be using Jupyter Notebooks to do this analysis. Please watch [this short introduction on Jupyter](https://www.youtube.com/watch?v=jZ952vChhuI).
 
 6. Run `jupyter notebook` to start the notebook. Go into the `notebooks` directory, then open the `fetcher.ipynb` notebook.
