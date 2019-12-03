@@ -1,0 +1,45 @@
+---
+title: "draft1"
+author: "LiZihao"
+date: "10/9/2019"
+output: html_document
+---
+
+## 1. import data
+
+```{r}
+install.packages("jsonlite")
+library(jsonlite)
+json_data <- fromJSON("yelpOutput1.json")
+
+install.packages (c("tidyverse"))
+library(tidyverse)
+```
+
+## bar graph
+```{r}
+p1 <- ggplot(data = json_data,
+              mapping = aes(x = price)
+)
+
+p1 + geom_bar(fill = "blue")
+
+```
+
+- get distance from the entered address and graph with the price
+- figure out how to ggmap 
+```{r}
+library("ggmap")
+
+myLocation <- c(lon = 40.8080, lat = 73.9639)
+baseMap <- get_map(location=myLocation, source="osm", crop=FALSE)
+#?register_google
+map1 <- ggmap(baseMap)
+map1
+
+```
+
+
+
+
+
