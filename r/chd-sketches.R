@@ -9,7 +9,9 @@ rawData <- read.csv("pct_data2.csv")
 #p1 + geom_point(mapping = aes(color = Price)) + 
 #  scale_x_discrete(limits=c("Pre-open","30 days - 1 yr","1 - 2 yr","2 - 5 yr","5+ yr"))
 
-p1 <- ggplot(rawData, aes(Year,Pct_age_Price,fill = Price))
+p1 <- ggplot(rawData, aes(x=Price, y = Pct_age_Price))
 
-p1 + geom_col()
+p1 + geom_col() +
+  facet_wrap(~Year) +
+  coord_flip()
 
